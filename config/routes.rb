@@ -1,3 +1,10 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+    root 'courses#index'
+    
+  get  '/ruby' , to: 'courses#ruby'
+ get  '/html_css', to: 'courses#html_css'
+    get  '/php', to: 'courses#php'
+    get  '/javascript', to: 'courses#javascript'
+    
 end
